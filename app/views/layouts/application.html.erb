@@ -3,25 +3,15 @@
 <head>
   <title>Partup</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container1">
-  	
-<div class="row">
-	<div class="col-md-6"><center><%= image_tag("partup-logo.png", :alt => "rss feed") %></center></div>
-	<div class="col-md-1"></div>
-  <div class="col-md-4"><center><%= image_tag("social_media/facebook.png", :alt => "rss feed") %>
-  <%= image_tag("social_media/twitter.png", :alt => "rss feed") %></center>
-</div>
- 
-</div>
-  </div>
-
-</div>
+  	<center><h2>AFRINOMICS</h2></center>
   </div>
 </nav>
 
@@ -29,9 +19,17 @@
      <div class="container">
           <%= yield %>
      </div>
- <div class="container3">
-      
-     </div>
+<nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+  <div class="container3">
+  	<center>Send us your email and we'll notify you when we launch:   <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true") do -%>
+   <%= email_field(:email, :address, {id: "email", placeholder: "email address"}) %>
+ <%= submit_tag("Send", class: 'btn btn-primary btn-sm') %></button></p>
+<% end %>
+<div id="response"></div></div></center>
+
+</nav>
+
+
 
 </body>
 </html>

@@ -1,46 +1,87 @@
-$body-bg: #f2d763;
-$text-color: #5E412F;
+$body-bg: #232323;
+$text-color: #fff;
 $font-family-base: 'Open Sans', sans-serif;
 $font-size-base:14px;
-$navbar-default-bg: #2574a9;
-$navbar-default-border: #f2d763;
+$navbar-default-bg: #272727;
+$navbar-default-border: #272727;
 $navbar-default-link-color:#fff;
 $navbar-default-color: #fff;
-$navbar-height: 125px;
-$font-size-h3: 26px;
+$navbar-height: 80px;
+$font-size-h3: 34px;
+$font-size-h1: 26px;
+$font-size-h2: 26px;
 @media (min-width: 980px) {
 
   .container {
-      max-width: 1000px;
-      margin-top:45px;
+      max-width: 980px;
+      margin-top:50px;
+      margin-bottom: 30px;
 
 
 }
 .container1 {
       max-width: 1000px;
-      padding-top:40px;
+      padding-top:20px;
       margin: 0 auto;
          color: #fff;
 
 
 
 }
-
-.container2 {
-      border: 3px #fff solid; 
-      padding: 10px;
-
-
-}
 .container3 {
-
-      padding: 10px;
- 
-      margin-top: 30px;
+    content: " ";
+    max-width: 980px;
+    margin: 30px auto;
+    font-family: arial;
 
 
 }
+
+btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
 }
+
+.btn-circle.btn-lg {
+  width: 125px;
+  height: 125px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 65px;
+}
+
+.title {
+  
+    font-family: arial;
+    font-size: 16px;
+    color: #666;
+}
+h1 {
+	  content: " ";
+    width: 160px;
+    height: 1px;
+    display: inline-block;
+    background: none repeat scroll 0% 0% #393939;
+    margin-top: 25px;
+}
+
+.fa {
+color: #272727;
+}
+
+.btn {
+	color: #000;
+
+}
+
+}
+
 
 @import 'bootstrap';
 @import 'font-awesome';
