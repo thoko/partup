@@ -1,0 +1,46 @@
+$body-bg: #f2d763;
+$text-color: #5E412F;
+$font-family-base: 'Open Sans', sans-serif;
+$font-size-base:14px;
+$navbar-default-bg: #2574a9;
+$navbar-default-border: #f2d763;
+$navbar-default-link-color:#fff;
+$navbar-default-color: #fff;
+$navbar-height: 125px;
+$font-size-h3: 26px;
+@media (min-width: 980px) {
+
+  .container {
+      max-width: 1000px;
+      margin-top:45px;
+
+
+}
+.container1 {
+      max-width: 1000px;
+      padding-top:40px;
+      margin: 0 auto;
+         color: #fff;
+
+
+
+}
+
+.container2 {
+      border: 3px #fff solid; 
+      padding: 10px;
+
+
+}
+.container3 {
+
+      padding: 10px;
+ 
+      margin-top: 30px;
+
+
+}
+}
+
+@import 'bootstrap';
+@import 'font-awesome';
